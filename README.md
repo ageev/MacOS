@@ -11,7 +11,7 @@ not sure yet. So far Windows 10/11 looks more advanced and usable then MacOS. Bu
 ## Usefull tools
 1. [AltTab](https://github.com/lwouis/alt-tab-macos) - adds Windowds "Win + Tab" experience to MacOS
 2. [Rectangle](https://github.com/rxhanson/Rectangle) - normal "full screen" windows resizing 
-3. [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. Logitech Options cas aslo do that if you have a logitech mouse.
+3. [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse.
 4. [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
 5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac
 
