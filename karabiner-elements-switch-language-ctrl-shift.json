@@ -1,0 +1,32 @@
+{
+  "title": "Languages",
+  "rules": [
+    {
+      "description": "Control + Shift to Control + Options + Space",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_control",
+                "left_option"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
