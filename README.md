@@ -17,7 +17,7 @@ As a security guy I should stick to tools/equipment used by majority of my herd 
 5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. 
 
 ## Keyboard
-I sue Microsoft Windows keyboard. It works fine, but you really need to remap some keys
+I use Microsoft Windows keyboard. It works fine, but you really need to remap some keys
 1. Install Karabiner-Elements
 2. Copy ```*.json``` files from this repo to  ```.config/karabiner/assets/complex_modifications/```
 3. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` at the bottom left corner and you should see new rules there. Enable & Enjoy!
