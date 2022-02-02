@@ -145,6 +145,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Ctrl + F to Command + F",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+                "key_code": "f",
+                "modifiers": [
+                        "left_command"
+                        ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
