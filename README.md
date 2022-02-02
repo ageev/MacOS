@@ -3,7 +3,8 @@ tips and tricks for MacOS users
 
 # Migrating from Windows to MacOS
 ## Why?
-not sure yet. So far Windows 10/11 looks more advanced and usable then MacOS. But time will tell...
+not sure yet. So far Windows 10/11 looks more advanced and usable then MacOS.
+As a security guy I should stick to tools/equipment used by majority of my herd -> let's try Mac
 
 ## Installation & Setup
 1. Use "Russian - PC" keyboard layout instead on just "Russian"
