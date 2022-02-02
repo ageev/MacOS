@@ -27,7 +27,7 @@ I sue Microsoft Windows keyboard. It works fine, but you really need to remap so
 3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
 
 ## Issues
-1. Unstable wifi6. By HP 840 g2 win11 wifi reception was better. Solution - switch to wire (external wifi needed)
+1. Unstable wifi6. By HP 840 g2 win11 wifi reception was better. Solution - switch to wire (external Ethernet-USB adapter is needed)
 2. Slow USB-C speed with some displays/hubs. We carefull, many hubs/displays who offer USB-c connection to MBP have USB2.0 hubs. Solution - external separate USB-C to USB-A hub 
 
 ## links
