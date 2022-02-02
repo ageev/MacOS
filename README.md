@@ -6,8 +6,8 @@ tips and tricks for MacOS users
 not sure yet. So far Windows 10/11 looks more advanced and usable then MacOS.
 As a security guy I should stick to tools/equipment used by majority of my herd -> let's try Mac
 
-## Installation & Setup
-1. Use "Russian - PC" keyboard layout instead on just "Russian"
+## Installation & Setup tricks
+1. Use "Russian - PC" keyboard layout instead of just "Russian"
 
 ## Usefull tools
 1. [AltTab](https://github.com/lwouis/alt-tab-macos) - adds Windowds "Win + Tab" experience to MacOS
