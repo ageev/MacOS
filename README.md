@@ -29,7 +29,7 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 
 ## Issues
 1. Unstable wifi6. By HP 840 g2 win11 wifi reception was better. Solution - switch to wire (external Ethernet-USB adapter is needed)
-2. Slow USB-C speed with some displays/hubs. Be carefull, many hubs/displays who offer USB-c connection to MBP have USB2.0 hubs. Solution - external separate USB-C to USB-A hub 
+2. Slow USB-C speed with some displays/hubs. Be carefull, many hubs/displays who offer USB-c connection to MBP have low speed USB3.0 hubs. Solution - external separate USB-C to USB-A hub 
 
 ## links
 1. https://habr.com/ru/post/588380/
