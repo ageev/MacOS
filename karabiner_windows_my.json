@@ -216,7 +216,7 @@
             ]
         },
         {
-            "description": "Win Key to Ctrl + Esc",
+            "description": "Win Key to Spotlight",
             "manipulators": [
                 {
                     "type": "basic",
