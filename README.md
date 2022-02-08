@@ -14,7 +14,7 @@ As a security guy I should stick to tools/equipment used by majority of my herd 
 2. [Rectangle](https://github.com/rxhanson/Rectangle) - normal "full screen" windows resizing 
 3. [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse.
 4. [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
-5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. 
+5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac
 
 ## Keyboard
 I use Microsoft Windows keyboard. It works fine, but you really need to remap some keys
@@ -26,6 +26,13 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 1. enable firewall via settings
 2. enable FileVault (full disk encryption) via settings
 3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
+4. "Mac doesn't need an antivirus" <- I should say I agree with this statement for now.. I got used to much higher capabilities, performance, stability and AV usability on Windows systems then on MacOS (especially with M1 chips). I tried only Sophos for now and it's a disaster. It basically broke my system and I manually cleaned it.
+
+### Modifying system extentions
+You can list *system extentions* (it's like *services* in Windows) using ```systemextensionsctl list```. 
+If you need to remove some of them you need to disable the [System Itegrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) first. 
+On Apple-silicon macs you need to hold the TouchID button during boot to enter the Recovery Mode. Then go to "Options", pick a user and run the Terminal via the top menu bar. Disable SIP with ```csrutil disable``` & reboot. Use ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the extention. Reenable SIP using ```csrutil enable```
+
 
 ## Issues
 1. Not really a Mac issue, but keep in mind: slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one
