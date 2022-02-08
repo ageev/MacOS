@@ -26,7 +26,7 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 1. enable firewall via settings
 2. enable FileVault (full disk encryption) via settings
 3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
-4. "Mac doesn't need an antivirus" <- I should say I agree with this statement for now.. I got used to much higher capabilities, performance, stability and AV usability on Windows systems then on MacOS (especially with M1 chips). I tried only Sophos for now and it's a disaster. It basically broke my system and I manually cleaned it.
+4. "Mac doesn't need an antivirus" <- I should say I agree with this statement for now.. I got used to much higher capabilities, performance, stability and AV usability on Windows systems then on MacOS (especially with M1 chips). I tried only Sophos for now and it's a disaster. It basically broke my system and I was forced to clean it manually because removal tool was also broken.
 
 ### Modifying system extentions
 You can list *system extentions* (it's like *services* in Windows) using ```systemextensionsctl list```. 
