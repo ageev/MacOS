@@ -33,7 +33,7 @@ You can list *system extentions* (it's like *services* in Windows) using ```syst
 
 If you need to remove some of them you need to disable the [System Itegrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) first. 
 
-On Apple-silicon macs you need to hold the TouchID button during boot to enter the Recovery Mode. Then go to "Options", pick a user and run the Terminal via the top menu bar. Disable SIP with ```csrutil disable``` & reboot. Use ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the extention. Reenable SIP using ```csrutil enable```
+On Apple-silicon macs you need to hold the TouchID button during boot to enter the Recovery Mode. Then go to "Options", pick a user and run the Terminal via the top menu bar. Disable SIP with ```csrutil disable``` & reboot. Use ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the extention. Reenable SIP using ```csrutil enable``` in the Recovery Mode again.
 
 ## Tips and tricks
 For multiscreen setup: if your dock jumps from one screen to another - go to the main one and gently move your mouse down in the center of the screen. Dock should appear now. 
