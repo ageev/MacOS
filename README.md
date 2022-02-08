@@ -28,8 +28,8 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
 
 ## Issues
-1. Unstable wifi6. By HP 840 g2 win11 wifi reception was better. Solution - switch to wire (external Ethernet-USB adapter is needed)
-2. Slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one
+1. Not really a Mac issue, but keep in mind: slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one
+2. USB keyboard doesn't work on Mac's login screen when system was rebooted
 
 ## links
 1. https://habr.com/ru/post/588380/
