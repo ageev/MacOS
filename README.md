@@ -29,9 +29,9 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 4. "Mac doesn't need an antivirus" <- I should say I agree with this statement for now.. I got used to much higher capabilities, performance, stability and AV usability on Windows systems then on MacOS (especially with M1 chips). I tried only Sophos for now and it's a disaster. It basically broke my system and I was forced to clean it manually because removal tool was also broken.
 
 ### Modifying system extentions
-You can list *system extentions* (it's like *services* in Windows) using ```systemextensionsctl list```. 
+You can list *system extensions* (it's like *services* in Windows) using ```systemextensionsctl list```. 
 
-If you need to remove some of them you need to disable the [System Itegrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) first. 
+If you need to remove some of them you need to disable the [System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) first. 
 
 On Apple-silicon macs you need to hold the TouchID button during boot to enter the Recovery Mode. Then go to "Options", pick a user and run the Terminal via the top menu bar. Disable SIP with ```csrutil disable``` & reboot. Use ```systemextensionsctl uninstall <teamId> <bundleId>``` to remove the extention. Reenable SIP using ```csrutil enable``` in the Recovery Mode again.
 
