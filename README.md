@@ -40,11 +40,14 @@ For multiscreen setup: if your dock jumps from one screen to another - go to the
 
 You can also remove this checkbox but it will brake other stuff: go to ```System Preferences > Mission control``` and remove "Displays have separate spaces"
 
-Clear Dock - ```defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock```
-
-Screenshot location - ```defaults write com.apple.screencapture location ~/Desktop/screenshots/```
-
-```defaults write com.apple.desktopservices DSDontWriteNetworkStores true``` No ".DS_store" files everywhere
+```bash
+# Clear dock. Helps fight bugs such as non-existing icons
+defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
+# Change screenshot location
+defaults write com.apple.screencapture location ~/Desktop/screenshots/
+# stop writing ".DS_Store" files to all network folders
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+```
 ### make sure "home" and "end" work in Terminal
 1. Open Terminal preferences
 2. "Profiles" -> "Keyboard". Add new rules for "End" and "home" button. Map "End" to Ctrl+E and "Home" to Ctrl+A
