@@ -53,7 +53,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 2. "Profiles" -> "Keyboard". Add new rules for "End" and "home" button. Map "End" to Ctrl+E and "Home" to Ctrl+A
 
 ## Issues
-1. Not really a Mac issue, but keep in mind: slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one
+1. Not really a Mac issue, but keep in mind: slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one. That means you can't have just one USB-C to connect Mac to all support devices.
 2. USB keyboard doesn't work on Mac's login screen when system was rebooted
 
 ## links
