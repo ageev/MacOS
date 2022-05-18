@@ -23,6 +23,8 @@ I use Microsoft Windows keyboard. It works fine, but you really need to remap so
 3. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` at the bottom left corner and you should see new rules there. Enable & Enjoy!
 
 ## Security
+Apple's security platform guide [2]
+
 1. enable firewall via settings
 2. enable FileVault (full disk encryption) via settings
 3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
@@ -58,3 +60,4 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 ## links
 1. https://habr.com/ru/post/588380/
+2. https://help.apple.com/pdf/security/en_US/apple-platform-security-guide.pdf
