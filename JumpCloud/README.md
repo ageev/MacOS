@@ -1,6 +1,15 @@
+# Managing devices with JumpCloud
+You can do little with the GUI. API - this is were the fun part starts
+
+## Getting API access to JumpCloud
+1. go to admin portal. Click your portret top right -> Get API Token
+2. install powershell for macOS or use native one
+3. run powershell (for macOS -> Terminal, "pwsh", Enter)
+4. Install JC module ```Install-Module -Name JumpCloud```
+5. Run it ```Import-Module -Name JumpCloud``` then ```Connect-JCOnline```
 ## Sort Apple silicon based systems to separate group in JC
 
-https://community.jumpcloud.com/t5/community-scripts/populate-jumpcloud-system-groups-based-on-mac-chipset-via/td-p/405
+
 
 get token: click top right corner of admin portal -> API key
 
@@ -92,3 +101,7 @@ try {
     Write-Error "Something went wrong when trying to add our systems to the groups! $($_.Exception.Message)" -ErrorAction Stop
 }
 ```
+
+# More to read
+[0] https://community.jumpcloud.com/t5/community-scripts/populate-jumpcloud-system-groups-based-on-mac-chipset-via/td-p/405
+[1] https://github.com/TheJumpCloud/support/wiki/
