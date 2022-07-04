@@ -10,6 +10,17 @@ Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.arch -eq "arm64"} | 
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.arch -ne "arm64"} | Add-JCSystemGroupMember -GroupName "Mac - Intel systems"
 Get-JCSystem | Where-Object {$_.os -like "Windows"} | Add-JCSystemGroupMember -GroupName "Windows"
 ```
+```powershell
+New-JCSystemGroup -GroupName "macOS legacy"
+New-JCSystemGroup -GroupName "macOS 11"
+New-JCSystemGroup -GroupName "macOS 12"
+New-JCSystemGroup -GroupName "macOS 13"
+Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -lt 11} | Add-JCSystemGroupMember -GroupName "macOS legacy"
+Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 11 -and $_.version -lt 12} | Add-JCSystemGroupMember -GroupName "macOS 11"
+Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 12 -and $_.version -lt 13} | Add-JCSystemGroupMember -GroupName "macOS 12"
+Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 13 -and $_.version -lt 14} | Add-JCSystemGroupMember -GroupName "macOS 13"
+
+```
 
 Save this as .ps1 file and run with scheduler
 
