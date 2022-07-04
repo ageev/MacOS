@@ -21,6 +21,11 @@ Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 12 -and 
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 13 -and $_.version -lt 14} | Add-JCSystemGroupMember -GroupName "macOS 13"
 
 ```
+Find Windows Home
+```powershell
+New-JCSystemGroup -GroupName "Windows Home"
+Get-JCSystem | Where-Object {$_.version -like "*Home"} |  Add-JCSystemGroupMember -GroupName "Windows Home"
+```
 
 Save this as .ps1 file and run with scheduler
 
