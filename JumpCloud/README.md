@@ -20,21 +20,22 @@ Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.arch -ne "arm64"} | 
 Get-JCSystem | Where-Object {$_.os -like "Windows"} | Add-JCSystemGroupMember -GroupName "Windows"
 ```
 ```powershell
-New-JCSystemGroup -GroupName "macOS legacy"
-New-JCSystemGroup -GroupName "macOS 11"
-New-JCSystemGroup -GroupName "macOS 12"
+# create folders
+New-JCSystemGroup -GroupName "Windows"
+New-JCSystemGroup -GroupName "Windows Home"
 New-JCSystemGroup -GroupName "macOS 13"
+New-JCSystemGroup -GroupName "macOS 12"
+New-JCSystemGroup -GroupName "macOS 11"
+New-JCSystemGroup -GroupName "macOS legacy"
+
+# sort systems
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -lt 11} | Add-JCSystemGroupMember -GroupName "macOS legacy"
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 11 -and $_.version -lt 12} | Add-JCSystemGroupMember -GroupName "macOS 11"
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 12 -and $_.version -lt 13} | Add-JCSystemGroupMember -GroupName "macOS 12"
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 13 -and $_.version -lt 14} | Add-JCSystemGroupMember -GroupName "macOS 13"
-
-```
-Find Windows Home
-```powershell
-New-JCSystemGroup -GroupName "Windows Home"
 Get-JCSystem | Where-Object {$_.version -like "*Home"} |  Add-JCSystemGroupMember -GroupName "Windows Home"
 ```
+
 
 Save this as .ps1 file and run with scheduler
 
