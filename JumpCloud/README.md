@@ -33,6 +33,7 @@ Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -lt 11} | Ad
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 11 -and $_.version -lt 12} | Add-JCSystemGroupMember -GroupName "macOS 11"
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 12 -and $_.version -lt 13} | Add-JCSystemGroupMember -GroupName "macOS 12"
 Get-JCSystem | Where-Object {$_.os -like "Mac OS X" -and $_.version -ge 13 -and $_.version -lt 14} | Add-JCSystemGroupMember -GroupName "macOS 13"
+Get-JCSystem | Where-Object {$_.os -like "Windows" | Add-JCSystemGroupMember -GroupName "Windows"
 Get-JCSystem | Where-Object {$_.version -like "*Home"} |  Add-JCSystemGroupMember -GroupName "Windows Home"
 ```
 
