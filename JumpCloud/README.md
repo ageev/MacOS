@@ -104,6 +104,10 @@ try {
 }
 ```
 
+```bash
+Get-JCSystem | % {Set-JCSystem -SystemID $_._id -displayName  $_.hostname}
+```
+
 # More to read
 [0] https://community.jumpcloud.com/t5/community-scripts/populate-jumpcloud-system-groups-based-on-mac-chipset-via/td-p/405
 [1] https://github.com/TheJumpCloud/support/wiki/
