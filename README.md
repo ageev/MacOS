@@ -1,11 +1,6 @@
 # MacOS
 tips and tricks for MacOS users
 
-# Migrating from Windows to MacOS
-## Why?
-not sure yet. So far Windows 10/11 looks more advanced and usable then MacOS.
-As a security guy I should stick to tools/equipment used by majority of my herd -> let's try Mac
-
 ## Installation & Setup tricks
 1. Use "Russian - PC" keyboard layout instead of just "Russian"
 
@@ -16,8 +11,7 @@ As a security guy I should stick to tools/equipment used by majority of my herd 
 4. [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
 5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac
 
-## Keyboard
-I use Microsoft Windows keyboard. It works fine, but you really need to remap some keys
+## Remap keys "Windows-style"
 1. Install Karabiner-Elements
 2. Copy ```karabiner*.json``` files from this repo to  ```.config/karabiner/assets/complex_modifications/```
 3. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` at the bottom left corner and you should see new rules there. Enable & Enjoy!
@@ -27,10 +21,10 @@ Apple's security platform guide [2]
 
 1. enable firewall via settings
 2. enable FileVault (full disk encryption) via settings
-3. for M1-based macs no need to seput firmware (NVRAM) password https://support.apple.com/en-us/HT204455
+3. for M1-based macs no need to setup the firmware (NVRAM) password https://support.apple.com/en-us/HT204455
 
 ### Modifying system extentions
-You can list *system extensions* (it's like *services* in Windows) using ```systemextensionsctl list```. 
+You can list *system extensions* using ```systemextensionsctl list```. 
 
 If you need to remove some of them you need to disable the [System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) first. 
 
@@ -56,6 +50,8 @@ defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
 defaults write com.apple.screencapture location ~/Desktop/screenshots/
 # stop writing ".DS_Store" files to all network folders
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+# show all files
+defaults write com.apple.Finder AppleShowAllFiles true
 ```
 ### Make sure "home" and "end" work in Terminal
 1. Open Terminal preferences
