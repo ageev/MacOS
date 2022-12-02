@@ -55,7 +55,7 @@ defaults write com.apple.Finder AppleShowAllFiles true
 ```
 ### Make sure "home" and "end" work in Terminal
 1. Open Terminal preferences
-2. "Profiles" -> "Keyboard". Add new rules for "End" and "home" button. Map "End" to Ctrl+E and "Home" to Ctrl+A
+2. "Profiles" -> "Keyboard". Add new rules for "End" and "home" button. Map "End" to Ctrl+E and "Home" to Ctrl+A (or follow (this article)[https://medium.com/internetstack/making-the-apple-magic-keyboard-home-end-buttons-behave-like-windows-with-modifier-keys-7c070c09ab93] )
 
 ## Issues
 1. Not really a Mac issue, but keep in mind: slow USB-C speed with some monitors when USB-c connection to Mac is used. Monitor's built-in USB hub is usually a low speed one. That means you can't have just one USB-C to connect Mac to all support devices.
