@@ -53,6 +53,12 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 # show all files
 defaults write com.apple.Finder AppleShowAllFiles true
 ```
+### Run "damaged" apps
+aka remove quarantine flags
+```bash
+sudo xattr -rds com.apple.quarantine /Applications/Coherence\ Pro.app
+```
+
 ### Make sure "home" and "end" work in Terminal
 1. Open Terminal preferences
 2. "Profiles" -> "Keyboard". Add new rules for "End" and "home" button. Map "End" to Ctrl+E and "Home" to Ctrl+A or follow [this article](https://medium.com/internetstack/making-the-apple-magic-keyboard-home-end-buttons-behave-like-windows-with-modifier-keys-7c070c09ab93) )
