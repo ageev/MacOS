@@ -9,6 +9,8 @@ This guide demonstrates how to add custom buttons (including a **Sleep** button)
 
 1. Download BetterTouchTool from [https://folivora.ai](https://folivora.ai).
 2. Install and grant the necessary accessibility and automation permissions.
+3. Disable app icon in Settings
+4. Add BetterTouchTool to the ```Launch at Login```
 
 ---
 
@@ -20,6 +22,7 @@ This guide demonstrates how to add custom buttons (including a **Sleep** button)
    - Click **"+ Add New Button"**.
    - Set **Name** (e.g., `F1`, `F2`, etc.).
    - Optionally, set an **Icon** or use the default text.
+   - Set size == 60
    - Under **Assigned Action**:
      - Action Type: **Send Shortcut to Specific App or System**.
      - Shortcut: Select the corresponding function key (F1, F2, etc.).
@@ -58,3 +61,7 @@ At the end of the file, add this exact line (replace your_username):
 ```bash
 your_username ALL=(ALL) NOPASSWD: /usr/bin/pmset sleepnow
 ```
+---
+
+## 6 (optional). Give SleepNow full disk access
+Maybe you will need it.
