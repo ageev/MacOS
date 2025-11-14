@@ -9,11 +9,13 @@ tips and tricks for MacOS users
 1. Use "Russian - PC" keyboard layout instead of just "Russian"
 
 ## Usefull tools
-1. [AltTab](https://github.com/lwouis/alt-tab-macos) - adds Windowds "Win + Tab" experience to MacOS
-2. [Rectangle](https://github.com/rxhanson/Rectangle) - normal "full screen" windows resizing 
-3. [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse.
-4. [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
-5. [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac
+- Tabby as a terminal
+- Maccy as a clipboard manager
+- [AltTab](https://github.com/lwouis/alt-tab-macos) - adds Windowds "Win + Tab" experience to MacOS
+- [Rectangle](https://github.com/rxhanson/Rectangle) - normal "full screen" windows resizing 
+- [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse.
+- [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
+- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac
 
 ## Remap keys "Windows-style"
 1. Install Karabiner-Elements
