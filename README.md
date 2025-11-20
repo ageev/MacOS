@@ -9,13 +9,10 @@ tips and tricks for MacOS users
 1. Use "Russian - PC" keyboard layout instead of just "Russian"
 
 ## Usefull tools
-- Tabby as a terminal
-- Maccy as a clipboard manager
-- [AltTab](https://github.com/lwouis/alt-tab-macos) - adds Windowds "Win + Tab" experience to MacOS
-- [Rectangle](https://github.com/rxhanson/Rectangle) - normal "full screen" windows resizing 
-- [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse.
-- [Fig](https://github.com/withfig/autocomplete) - adds autocomplete to MacOS's terminal
-- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac
+- [Tabby](https://tabby.sh/) as a terminal mostly because of convinient SSH manager. 
+- [Maccy](https://maccy.app/) as a clipboard manager. Press Option+V to get a list of last copied items (Analog of Win+V on Windows)
+- [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) - allows you to have different scroll directions for mouse and touchpad. *Logitech Options* can aslo do that if you have a logitech mouse. Currently I use [Mos.app](https://mos.caldis.me/). Not sure which one is better... 
+- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac. Update: I now got used to Mac's hotkeys. 
 
 ## Remap keys "Windows-style"
 1. Install Karabiner-Elements
@@ -27,7 +24,6 @@ Apple's security platform guide [2]
 
 1. enable firewall via settings
 2. enable FileVault (full disk encryption) via settings
-3. for M1-based macs no need to setup the firmware (NVRAM) password https://support.apple.com/en-us/HT204455
 
 ### Modifying system extentions
 You can list *system extensions* using ```systemextensionsctl list```. 
