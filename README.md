@@ -15,9 +15,38 @@ tips and tricks for MacOS users
 - [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) - keyboard customization in Mac. Most usefull app because it allows you to use familiar shortcuts (like Ctrl+C, Shift+End, Ctrl+Alt+T..) on Mac. Update: I now got used to Mac's hotkeys. 
 
 ## Remap keys "Windows-style"
+
+### Karabiner path
 1. Install Karabiner-Elements
 2. Copy ```karabiner*.json``` files from this repo to  ```.config/karabiner/assets/complex_modifications/```
 3. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` at the bottom left corner and you should see new rules there. Enable & Enjoy!
+### Remap keys path
+1. System Settings > Keyboard > Keyboard Shortcuts > Modifier Keys. Swap Control with Command keys.
+2. create this file ```~/Library/KeyBindings/DefaultKeyBinding.Dict``` with this content:
+```
+{
+    "\UF729"   = "moveToBeginningOfLine:";                       /* Home         */
+    "~\UF702"  = "moveToBeginningOfLine:";                       /* Option + Left Arrow */
+    "$\UF729"  = "moveToBeginningOfLineAndModifySelection:";     /* Shift + Home */
+
+    "\UF72B"   = "moveToEndOfLine:";                             /* End          */
+    "~\UF703"  = "moveToEndOfLine:";                             /* Option + Right Arrow */
+
+    "$\UF72B"  = "moveToEndOfLineAndModifySelection:";           /* Shift + End  */
+    "$~\UF703" = "moveToEndOfLineAndModifySelection:";           /* Shift + Option + Left Arrow  */
+
+    "\UF72C"   = "pageUp:";                                      /* PageUp       */
+    "\UF72D"   = "pageDown:";                                    /* PageDown     */
+
+    "@\UF702"  = "moveWordBackward:";                            /* Cmd  + LeftArrow */
+    "@\UF703"  = "moveWordForward:";                             /* Cmd  + RightArrow */
+
+    "@$\UF702" = "moveWordBackwardAndModifySelection:";          /* Shift + Cmd  + Leftarrow */
+    "@$\UF703" = "moveWordForwardAndModifySelection:";           /* Shift + Cmd  + Rightarrow */
+}
+```
+.. or make [your own](https://gist.github.com/trusktr/1e5e516df4e8032cbc3d#file-defaultkeybinding-dict)
+
 
 ## Security
 Apple's security platform guide [2]
