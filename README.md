@@ -18,9 +18,9 @@ tips and tricks for MacOS users
 
 ### Karabiner path
 1. Install Karabiner-Elements
-2. Copy ```karabiner*.json``` files from this repo to  ```.config/karabiner/assets/complex_modifications/```
-3. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` at the bottom left corner and you should see new rules there. Enable & Enjoy!
-### Remap keys path
+2. Open Karabiner-Elements, goto "Complex modifications" tab. Click ```Add rule``` and copy-paste from the file in this repo. Enable & Enjoy!
+
+### OR remap keys path
 1. System Settings > Keyboard > Keyboard Shortcuts > Modifier Keys. Swap Control with Command keys.
 2. Go to Mission Control section of the shortcuts. Uncheck "move left a space" and "move right a space" so that Control+arrows will work as expected.
 3. create this file ```~/Library/KeyBindings/DefaultKeyBinding.Dict``` with this content:
