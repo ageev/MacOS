@@ -48,6 +48,8 @@ tips and tricks for MacOS users
 ```
 .. or make [your own](https://gist.github.com/trusktr/1e5e516df4e8032cbc3d#file-defaultkeybinding-dict)
 
+### disable bracketed paste
+If you want to paste code into terminal without ``` ^[[200~``` do this: ```echo 'zle_bracketed_paste=off' >> ~/.zshrc```
 
 ## Security
 Apple's security platform guide [2]
